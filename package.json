@@ -9,7 +9,7 @@
     "client": "webpack-dev-server --port 3000",
     "dev": "nf start",
     "dev:api": "nodemon ./src/server/start.js",
-    "start": "node ./src/server/start.js"
+    "start": "webpack && node ./src/server/start.js"
   },
   "dependencies": {
     "ace-css": "1.1",
