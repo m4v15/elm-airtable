@@ -26,8 +26,7 @@ playerEncoder : Player -> Encode.Value
 playerEncoder player =
     let
         attributes =
-            [ ( "id", Encode.string player.id )
-            , ( "name", Encode.string player.name )
+            [ ( "name", Encode.string player.name )
             , ( "level", Encode.int player.level )
             ]
     in
@@ -66,7 +65,7 @@ fetchPlayers =
 
 savePlayerCmd : Player -> Cmd Msg
 savePlayerCmd player =
-    methodPlayerRequest "PATCH" (editPlayerUrl player.id) player
+    methodPlayerRequest "PUT" (editPlayerUrl player.id) player
         |> Http.send Msgs.OnPlayerSave
 
 

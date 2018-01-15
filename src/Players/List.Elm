@@ -47,8 +47,7 @@ list players =
         [ table []
             [ thead []
                 [ tr []
-                    [ th [] [ text "Id" ]
-                    , th [] [ text "Name" ]
+                    [ th [] [ text "Name" ]
                     , th [] [ text "Level" ]
                     , th [] [ text "Actions" ]
                     ]
@@ -61,8 +60,7 @@ list players =
 playerRow : Player -> Html Msg
 playerRow player =
     tr []
-        [ td [] [ text player.id ]
-        , td [] [ text player.name ]
+        [ td [] [ text player.name ]
         , td [] [ text (toString player.level) ]
         , td []
             [ editBtn player

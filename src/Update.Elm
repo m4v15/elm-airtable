@@ -37,7 +37,7 @@ update msg model =
                 newPlayer =
                     { player | name = newName }
             in
-            ( model, savePlayerCmd newPlayer )
+            ( { model | newPlayer = newPlayer }, savePlayerCmd newPlayer )
 
         NewName newPlayer newName ->
             let
