@@ -1,7 +1,7 @@
 module Main exposing (..)
 
-import Commands exposing (fetchPlayers)
 import Models exposing (..)
+import Commands exposing (fetchPlayers)
 import Msgs exposing (..)
 import Navigation exposing (Location)
 import Routing
