@@ -35,7 +35,7 @@ playerEncoder player =
 
 basePlayersUrl : String
 basePlayersUrl =
-    "http://localhost:4000/players"
+    "https://elmtable.herokuapp.com/players"
 
 
 editPlayerUrl : PlayerId -> String

@@ -11064,7 +11064,7 @@ var _user$project$Msgs$OnFetchPlayers = function (a) {
 	return {ctor: 'OnFetchPlayers', _0: a};
 };
 
-var _user$project$Commands$basePlayersUrl = 'http://localhost:4000/players';
+var _user$project$Commands$basePlayersUrl = 'https://elmtable.herokuapp.com/players';
 var _user$project$Commands$editPlayerUrl = function (playerId) {
 	return A2(
 		_elm_lang$core$Basics_ops['++'],
